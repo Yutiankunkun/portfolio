@@ -1,11 +1,12 @@
 const Education = () => {
+  const baseUrl = import.meta.env.BASE_URL
   const education = [
     {
       school: 'Tokyo University of Science',
       degree: 'Master of Engineering in Information and Communication Engineering',
       period: 'Apr 2026 – Present',
       specialization: 'Medical Image Analysis, Computer Vision',
-      logo: '/images/science-tokyo.jpg',
+      logo: `${baseUrl}images/science-tokyo.jpg`,
       showCoreCourses: false,
     },
     {
@@ -14,7 +15,7 @@ const Education = () => {
       period: 'Apr 2024 - Mar 2026',
       specialization: 'Motor Behavior Decoding with Deep Learning and Reservoir Computing',
       coreCourses: 'Intermediate Econometrics, Statistics I, Mathematical Analysis I, Introduction to Medical Engineering',
-      logo: '/images/hitotsubashi.png',
+      logo: `${baseUrl}images/hitotsubashi.png`,
       showCoreCourses: true,
     },
     {
@@ -23,7 +24,7 @@ const Education = () => {
       period: 'Sep 2018 - Jun 2022',
       specialization: 'Financial Risk Analysis and Control in State-owned Enterprises',
       coreCourses: 'International Finance, Auditing, Management Accounting, Advanced Financial Accounting',
-      logo: '/images/shanghai-maritime.png',
+      logo: `${baseUrl}images/shanghai-maritime.png`,
       showCoreCourses: true,
     },
   ]
@@ -37,7 +38,7 @@ const Education = () => {
         {education.map((edu, index) => (
           <div key={index} className="education-box">
             <div className="education-logo">
-              <img src={edu.logo} alt={edu.school} onError={(e) => { e.target.onerror = null; e.target.src = 'https://placehold.co/64x64/e5e7eb/6b7280?text=Logo'; }} />
+              <img src={edu.logo} alt={edu.school} onError={(e) => { e.target.onerror = null; e.target.src = `https://placehold.co/64x64/e5e7eb/6b7280?text=Logo`; }} />
             </div>
             <div className="education-info">
               <div className="education-header">
