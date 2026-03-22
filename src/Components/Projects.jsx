@@ -1,15 +1,22 @@
 const projects = [
   {
-    title: 'Tian Chatbot',
-    techStack: 'Vue 3 / Spring Boot / LangChain4j / DashScope (Qwen)',
-    date: '2024',
+    title: 'AI Meeting Agent',
+    techStack: 'Python / FastAPI / SQLAlchemy / SQLite / Docker / AWS EC2',
+    date: 'March 2026',
+    description: 'Full-stack monorepo for student management and AI-assisted meeting support. Homeroom teachers manage students, teachers, and meeting records via natural language with an LLM agent. Includes FastAPI backend and React frontend as submodules.',
+    repoUrl: 'https://github.com/Yutiankunkun/smart-repo-agent',
+  },
+  {
+    title: 'Research Proposal Assistant',
+    techStack: 'Java / Spring Boot / LangChain4j / Docker / AWS EC2',
+    date: 'Feb 2026',
     description: 'AI-powered chatbot to help students draft Japanese graduate school research plans with real-time conversational guidance. Full-stack app with Vue 3 frontend, Spring Boot backend, and SSE streaming.',
     repoUrl: 'https://github.com/Yutiankunkun/tian-chatbot',
   },
   {
     title: 'Holotest WeApp',
     techStack: 'Taro / React / TypeScript',
-    date: '2024',
+    date: 'Sep 2024',
     description: 'Hololive personality matching WeChat Mini Program. 10-question A/B personality quiz that matches users with a Hololive member based on MBTI-style dimensional mapping.',
     repoUrl: 'https://github.com/Yutiankunkun/holotest-weapp',
   },
